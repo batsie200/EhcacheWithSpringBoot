@@ -1,0 +1,6 @@
+com/sample/jsr107/PersonController.class
+com/sample/jsr107/CacheSetup.class
+com/sample/EhcacheJsr107Application.class
+com/sample/ehcache/EventLogger.class
+com/sample/jsr107/PersonService.class
+com/sample/jsr107/Person.class
