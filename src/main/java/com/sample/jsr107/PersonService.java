@@ -23,21 +23,6 @@ import org.springframework.stereotype.Component;
 public class PersonService {
     private static final Logger LOGGER = LoggerFactory.getLogger(PersonService.class);
 
-    //create cache
-    /*@Component
-    public static class CachingSetup implements JCacheManagerCustomizer
-    {
-      @Override
-      public void customize(CacheManager cacheManager)
-      {
-        cacheManager.createCache("people", new MutableConfiguration<>()
-          .setExpiryPolicyFactory(TouchedExpiryPolicy.factoryOf(new Duration(SECONDS, 20)))
-          .setStoreByValue(false)
-          .setStatisticsEnabled(true));
-      }
-    }
-    */
-
     @CacheResult
     public Person getPerson(int persId)
     {
